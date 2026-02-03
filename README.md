@@ -19,5 +19,8 @@ make
 make flash
 ```
 
+## Note
+The kernel was written using other sources and guides.
+
 ## License
 MIT
