@@ -8,7 +8,7 @@ system_clock_config(void)
 	RCC_CR |= RCC_CR_HSEON;
 	while (!(RCC_CR & RCC_CR_HSERDY)); // Wait to enabling HSE
 
-  /* Setup flash */
+  	/* Setup flash */
 	FLASH_ACR = 0x32;
 
 	/* Setup PLL */
@@ -19,7 +19,7 @@ system_clock_config(void)
 	RCC_CFGR |= (0x0 << 11);
 	RCC_CFGR |= (0x0 << 4);
     
-  /* Enabling PLL */
+	/* Enabling PLL */
 	RCC_CR |= RCC_CR_PLLON;
 	while (!(RCC_CR & RCC_CR_PLLRDY)); // Wait to enabling PLL
 
